@@ -1,0 +1,500 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: normal;
+}
+
+body {
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.container {
+    margin: 0px auto;
+    max-width: 1240px;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+header .container {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+header .container .logo {
+    width: 25%;
+}
+
+header .container .logo a {
+    color: #3cb878;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 100px;
+}
+
+header .container .menu {
+    width: 50%;
+}
+
+header .container .menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .container .menu ul li a {
+    color: #3f4853;
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+header .container .menu ul li a:hover {
+    color: #3cb878;
+}
+
+header .container .icon {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+
+}
+
+header .container .icon a {
+    margin-right: 30px;
+    display: block;
+    position: relative;
+}
+
+
+header .container .icon a small {
+    position: absolute;
+    background-color: #3cb878;
+    display: block;
+    top: -9px;
+    right: -15px;
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* slider */
+
+#slider {
+    width: 100%;
+}
+
+#slider .slider-item {
+    width: 100%;
+    position: relative;
+}
+
+#slider .slider-item img {
+    width: 100%;
+}
+
+#slider .slider-item h2 {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    font-size: 3rem;
+    color: #161718;
+}
+
+#slider .slider-item h2 small {
+    display: block;
+    margin-top: 10px;
+    color: #3cb878;
+}
+
+/* seller */
+
+#seller {
+    width: 100%;
+    margin-top: 100px;
+}
+
+ul.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.product-list li {
+    width: 18%;
+    position: relative;
+}
+
+ul.product-list li img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+ul.product-list li.introduce {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul.product-list li.introduce h2 {
+    color: #161718;
+}
+
+ul.product-list li.introduce small {
+    color: #3cb878;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+ul.product-list li.introduce p {
+    color: #3f4853;
+}
+
+ul.product-list li a {
+    font-size: .8rem;
+    color: #3f4853;
+}
+
+ul.product-list li p {
+    font-size: .8rem;
+    color: #3cb878;
+}
+
+ul.product-list li:hover .buy {
+    display: block;
+}
+
+ul.product-list li .buy {
+    position: absolute;
+    top: 0px;
+    right: 0px; 
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+ul.product-list li .buy a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #3cb878 url(../img/buy.png) no-repeat;
+    margin-bottom: 5px;
+}
+
+ul.product-list li .buy a:nth-child(1) {
+    background-position: 5px 5px;
+}
+
+ul.product-list li .buy a:nth-child(2) {
+    background-position: 5px -44px;
+}
+
+ul.product-list li .buy a:nth-child(3) {
+    background-position: 4px -95px;
+}
+
+/* sipping */
+
+#sipping {
+    width: 100%;
+    margin-top: 120px;
+    background: #f5f6f9;
+    padding: 50px 0px;
+}
+
+#sipping .container ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sipping .container ul li {
+    text-align: center;
+}
+
+#sipping .container ul li h2 {
+    font-size: 1rem;
+    margin: 5px 0px;
+}
+
+#shipping .container ul li small {
+    color: #888888;
+    font-size: 13px;
+}
+
+/* promotion */
+
+#promotion {
+    background: #2e3348;
+    width: 100%;
+}
+
+#promotion .container ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#promotion .container ul li {
+    width: 30%;
+    text-align: center;
+    display: block;
+    padding: 40px 0px;
+}
+
+#promotion .container ul li:nth-child(2) {
+    background: #34394f;
+}
+
+#promotion .container ul li img {
+    width: 80%;
+}
+
+/* product */
+
+#product h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#product small {
+    display: block;
+    text-align: center;
+    color: #62c592;
+    margin-bottom: 30px ;
+}
+
+/* brands */
+
+#brands {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.brands, .discount  {
+    height: 250px;
+    width: 50%;
+}
+
+#brands .discount {
+    background: #2b2e41 url(../img/bgform.jpg) no-repeat;
+    text-align: center;
+    background-size: cover;
+}
+
+#brands .discount div.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#brands .discount div.text h2 {
+    color: #ffff;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#brands .discount div.text p {
+    max-width: 400px;
+    line-height: 25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#brands .discount from input {
+    width: 300px;
+    padding: 5px;
+}
+
+
+#brands .discount from button {
+    background: #3cb878;
+    color: #fff;
+    border: none;
+    padding: 6px;
+} 
+
+
+#brands .brands {
+    background: #f5f6f9;
+    width: 50%;
+}
+
+#brands .brands ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 250px;
+    align-items: center;
+}
+
+#brands .brands ul li a {
+    width: 120px;
+    height: 130px;
+    background: url(../img/brand.png) no-repeat;
+    display: block;
+}
+
+#brands .brands ul li:nth-child(2) a {
+    background-position: -233px 0px;
+}
+
+#brands .brands ul li:nth-child(3) a {
+    background-position: -466px 1px;
+} 
+
+#brands .brands ul li:nth-child(4) a {
+    background-position: -699px 0px;
+}
+
+/* footer */
+
+footer {
+    background: #000;
+    height: 45px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    width: 100%;
+}
+
+.f-left, .f-right {
+    width: 50%;
+}
+
+.f-left {
+    text-align: center;
+}
+
+.f-right ul {
+    display: flex;;
+    max-width: 300px;
+    width: 300px;
+    margin: 0px auto;
+}
+
+.f-right ul a {
+    width: 50px;
+    height: 30px;
+    background: url(../img/payment.png) no-repeat;
+    display: block;
+}
+
+.f-right ul li:nth-child(2) a {
+    background-position: -118px 0;
+}
+
+.f-right ul li:nth-child(3) a {
+    background-position: -178px 0;
+}
+
+.f-right ul li:nth-child(4) a {
+    background-position: -239px 0;
+}
+
+.f-right ul li:nth-child(5) a {
+    background-position: -59px 0;
+}
+
+/* media */
+
+@media only screen and (max-width:480px) {
+    header {
+        height: 50px;
+    }
+    header .container {
+        height: 50px;
+    }   
+    header .container .menu {
+        display: none;
+    }
+    header .container .logo {
+        width: 60%;
+        text-align: center;
+    }
+    header .container .icon {
+        width: 40%;
+    }
+    header .container .logo a {
+        font-size: 1.1rem;
+        line-height: 50px;
+    }
+    #slider .slider-item h2 {
+        top: 23%;
+        left: 6%;
+        font-size: 1.5rem;
+    }
+    #seller {
+        margin-top: 33px;
+    }
+    ul.product-list li.introduce {
+        width: 100%;
+        align-items: center;
+    }
+    ul.product-list li.introduce p {
+        max-width: 60%;
+    }
+    ul.product-list li {
+        width: 43%;
+        position: relative;
+        margin: 10px;
+    }
+    #sipping {
+        margin-top: 75px;
+    }
+    #sipping .container ul {
+        flex-wrap: wrap;
+    }
+    #sipping .container ul li {
+        width: 50%;
+        margin: 10px 0px;
+    }
+    #sipping .container ul li:nth-child(3) h2 {
+        margin-top: 20px;
+    }
+    #promotion .container ul {
+        flex-direction: column;
+    }
+    #promotion .container ul li {
+        width: 100%;
+    }  
+    #brands {
+        flex-wrap: wrap;
+    }   
+    #brands .discount {
+        width: 100%;
+    }
+    #brands .brands {
+        width: 100%;
+    }
+    #brands .brands ul {
+        flex-wrap: wrap;
+    }
+    footer {
+        flex-wrap: wrap;
+    }
+    .f-left {
+        width: 100%;
+    }
+    .f-right {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
